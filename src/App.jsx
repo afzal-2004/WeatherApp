@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-inner-declarations */
+
 import "./App.css";
 
 import { useState } from "react";
@@ -9,7 +10,7 @@ function App() {
   const [City, setCity] = useState("");
 
   const [data, setdata] = useState({});
-  const Apikey = process.env.VITE_REACT_API_KEY;
+  const Apikey = `bb13d3c6efdde5c70dfe30f891203deb`;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${City}&appid=${Apikey}&units=metric`;
 
